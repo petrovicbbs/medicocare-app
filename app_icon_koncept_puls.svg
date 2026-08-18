@@ -1,0 +1,31 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B"/>
+      <stop offset="100%" stop-color="#6C5CE7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="32%" cy="28%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="pillShadow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#00000055"/>
+    </filter>
+    <clipPath id="capClip">
+      <rect x="-150" y="-60" width="300" height="120" rx="60" ry="60"/>
+    </clipPath>
+  </defs>
+
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad2)"/>
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#glow)"/>
+
+  <g transform="translate(256,256) rotate(-28)" filter="url(#pillShadow)">
+    <rect x="-150" y="-60" width="300" height="120" rx="60" fill="#ffffff"/>
+    <rect x="0" y="-60" width="150" height="120" fill="#CFFAFE" clip-path="url(#capClip)"/>
+    <ellipse cx="-70" cy="-28" rx="90" ry="20" fill="#ffffff" opacity="0.55" clip-path="url(#capClip)"/>
+  </g>
+
+  <g transform="translate(256,256) rotate(-28)">
+    <path d="M-150,0 L-68,0 L-44,-52 L-14,52 L10,-24 L34,0 L150,0" fill="none" stroke="#E11D48" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

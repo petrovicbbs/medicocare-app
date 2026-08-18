@@ -1,0 +1,71 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F6EF7"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8FA3"/>
+      <stop offset="100%" stop-color="#E91E63"/>
+    </linearGradient>
+    <linearGradient id="calGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B39DDB"/>
+      <stop offset="100%" stop-color="#5E35B1"/>
+    </linearGradient>
+    <linearGradient id="cycleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A80"/>
+      <stop offset="100%" stop-color="#C2185B"/>
+    </linearGradient>
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4FC3F7"/>
+      <stop offset="100%" stop-color="#0277BD"/>
+    </linearGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#00000055"/>
+    </filter>
+    <filter id="centerShadow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#00000066"/>
+    </filter>
+    <clipPath id="pillClip">
+      <rect x="-35" y="-15" width="70" height="30" rx="15" ry="15"/>
+    </clipPath>
+  </defs>
+
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad)"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="80" y="80" width="168" height="168" rx="40" fill="url(#leafGrad)"/>
+    <rect x="264" y="80" width="168" height="168" rx="40" fill="url(#heartGrad)"/>
+    <rect x="80" y="264" width="168" height="168" rx="40" fill="url(#calGrad)"/>
+    <rect x="264" y="264" width="168" height="168" rx="40" fill="url(#cycleGrad)"/>
+  </g>
+
+  <g transform="translate(164,164) scale(2.7) translate(-12,-12)" fill="#ffffff">
+    <path d="M6.05 8.05c-2.73 2.73-2.73 7.15-.02 9.88c1.47-3.4 4.09-6.24 7.36-7.93c-2.77 2.34-4.71 5.61-5.39 9.32c2.6 1.23 5.8.78 7.95-1.37C19.43 14.47 20 4 20 4S9.53 4.57 6.05 8.05z"/>
+  </g>
+
+  <g transform="translate(348,164) scale(2.7) translate(-12,-12)" fill="#ffffff">
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  </g>
+
+  <g transform="translate(164,348) scale(2.7) translate(-12,-12)" fill="#ffffff">
+    <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
+  </g>
+
+  <g transform="translate(348,348) scale(2.7) translate(-12,-12)" fill="#ffffff">
+    <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6c0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6c0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4l-4-4v3z"/>
+  </g>
+
+  <g transform="translate(256,256) rotate(45)" filter="url(#centerShadow)">
+    <rect x="-78" y="-78" width="156" height="156" rx="32" fill="url(#pillGrad)" stroke="#ffffff" stroke-width="6"/>
+  </g>
+  <g transform="translate(256,256)">
+    <rect x="-35" y="-15" width="70" height="30" rx="15" ry="15" fill="#ffffff"/>
+    <rect x="0" y="-15" width="35" height="30" fill="#B3E5FC" clip-path="url(#pillClip)"/>
+    <line x1="0" y1="-15" x2="0" y2="15" stroke="#0288D1" stroke-width="2.5"/>
+  </g>
+</svg>

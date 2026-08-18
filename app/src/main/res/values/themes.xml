@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Mora naslediti Theme.AppCompat (ili potomka) da bi AppCompatActivity radio —
+         potrebno za AppCompatDelegate.setApplicationLocales (izbor jezika po API<33). -->
+    <style name="Theme.MedicoCare" parent="Theme.AppCompat.DayNight.NoActionBar" />
+</resources>
